@@ -1,90 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delete Account - DawaCheck</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your account - DawaCheck</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    color-scheme: light dark;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e8e8e8; background: #14161a; }
-    a { color: #7cb8ff; }
-    hr { border-color: #333; }
-  }
-  h1 {
-    font-size: 1.75rem;
-    margin-bottom: 0.25rem;
-  }
-  .updated {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    .updated { color: #999; }
-  }
-  h2 {
-    font-size: 1.15rem;
-    margin-top: 2rem;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 0.4rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    h2 { border-bottom-color: #333; }
-  }
-  ul {
-    padding-left: 1.3rem;
-  }
-  li {
-    margin-bottom: 0.5rem;
-  }
-  a {
-    color: #0060df;
-  }
-  nav {
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-  }
+:root{--paper:#F7F5F0;--card:#FFFFFF;--ink:#0F1B2D;--muted:#5B6576;--line:#E4E1D8;--blue:#2F66B8}
+@media (prefers-color-scheme:dark){:root{--paper:#0C1320;--card:#121B2B;--ink:#EEF2F8;--muted:#97A3B6;--line:#223047;--blue:#6E9BE0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:18px}
+.logo img{width:30px;height:30px;border-radius:8px}
+.logo b{color:var(--blue);font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+nav a:hover{color:var(--ink)}
+main{padding:48px 0 72px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(32px,6vw,44px);line-height:1.1;letter-spacing:-.02em;margin:0}
+.updated{color:var(--muted);font-size:14px;margin:10px 0 36px}
+h2{font-size:18px;font-weight:600;margin:36px 0 8px}
+p,li{color:var(--ink)}
+ul{padding-left:22px}
+li{margin-bottom:8px}
+a{color:var(--blue)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:14px}
+@media (max-width:520px){nav a{margin-left:12px}}
 </style>
 </head>
 <body>
-<nav><a href="./">Home</a> · <a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></nav>
-
+<header><div class="wrap bar">
+<a class="logo" href="./"><img src="assets/icon.png" alt=""><span>Dawa<b>Check</b></span></a>
+<nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav>
+</div></header>
+<main><div class="wrap">
 <h1>Delete your DawaCheck account</h1>
-<p class="updated">Last updated: September 30, 2026</p>
-
-<p>This page explains how to delete your account in <strong>DawaCheck</strong> (Android app, developer: DawaCheck, contact <strong>support@dawacheck.in</strong>) and what happens to your data.</p>
-
+<p class="updated">Last updated: October 2, 2026</p>
+<p>This page explains how to delete your account in DawaCheck (Android app, developer: DawaCheck, contact <a href="mailto:support@dawacheck.in">support@dawacheck.in</a>) and what happens to your data.</p>
 <h2>Option 1: in the app</h2>
 <ol>
-  <li>Open DawaCheck and go to <strong>Settings → Account</strong>.</li>
-  <li>Tap <strong>"Delete my account"</strong> and confirm.</li>
+  <li>Open DawaCheck and go to Settings &rarr; Account.</li>
+  <li>Tap "Delete my account" and confirm.</li>
 </ol>
-<p>Your account is deleted from our server immediately.</p>
-
+<p>Your account is deleted from our server immediately. If you have a monthly plan, its renewal is stopped; if that ever fails, the app tells you to cancel it in Google Play.</p>
 <h2>Option 2: without the app</h2>
-<p>Email <strong>support@dawacheck.in</strong> from the email address of the Google account you signed in with (or, for older accounts, include the phone number you verified), with the subject <strong>"Delete my account"</strong>. We confirm by reply and delete the account within 30 days.</p>
-
+<p>Email <a href="mailto:support@dawacheck.in">support@dawacheck.in</a> from the email address of the Google account you signed in with (or, for older accounts, include the phone number you verified), with the subject "Delete my account". We confirm by reply and delete the account within 30 days.</p>
 <h2>What is deleted</h2>
 <ul>
   <li>Your Google account details (account ID, name, email address, profile photo) or phone number</li>
   <li>Your check count, subscription and recharge records</li>
-  <li>Your saved My List</li>
+  <li>Your saved My List and savings history</li>
+</ul>
+<h2>What is kept</h2>
+<ul>
+  <li>For 35 days: a one-way coded identifier with today's check count, this month's subscription usage and whether you answered the age/location questions, so the free allowance can't be reset by re-creating the account. It is then erased automatically.</li>
+  <li>Anonymous records of age range, gender, approximate location and searched medicines. These are stored without any name, email address, phone number or account identifier, are not joined to your account, and are not removed.</li>
+  <li>Google Play keeps its own records of any purchases under Google's policies.</li>
 </ul>
 
-<h2>What is kept</h2>
-<p>Anonymous records of age range, gender, approximate location and searched medicines are stored without any name, email address, phone number or account identifier, so they cannot be linked to you and are not removed. Google Play keeps its own records of any purchases under Google's policies. Nothing else is retained after deletion.</p>
-
+</div></main>
+<footer><div class="wrap">DawaCheck is a medicine price information tool. It is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. &middot; <a href="mailto:support@dawacheck.in">support@dawacheck.in</a></div></footer>
 </body>
 </html>

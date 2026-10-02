@@ -1,115 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy - DawaCheck</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    color-scheme: light dark;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.25rem 4rem;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #ffffff;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { color: #e8e8e8; background: #14161a; }
-    a { color: #7cb8ff; }
-    hr { border-color: #333; }
-  }
-  h1 {
-    font-size: 1.75rem;
-    margin-bottom: 0.25rem;
-  }
-  .updated {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    .updated { color: #999; }
-  }
-  h2 {
-    font-size: 1.15rem;
-    margin-top: 2rem;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 0.4rem;
-  }
-  @media (prefers-color-scheme: dark) {
-    h2 { border-bottom-color: #333; }
-  }
-  ul {
-    padding-left: 1.3rem;
-  }
-  li {
-    margin-bottom: 0.5rem;
-  }
-  a {
-    color: #0060df;
-  }
-  nav {
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-  }
+:root{--paper:#F7F5F0;--card:#FFFFFF;--ink:#0F1B2D;--muted:#5B6576;--line:#E4E1D8;--blue:#2F66B8}
+@media (prefers-color-scheme:dark){:root{--paper:#0C1320;--card:#121B2B;--ink:#EEF2F8;--muted:#97A3B6;--line:#223047;--blue:#6E9BE0}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:600;font-size:18px}
+.logo img{width:30px;height:30px;border-radius:8px}
+.logo b{color:var(--blue);font-weight:600}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+nav a:hover{color:var(--ink)}
+main{padding:48px 0 72px}
+h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:clamp(32px,6vw,44px);line-height:1.1;letter-spacing:-.02em;margin:0}
+.updated{color:var(--muted);font-size:14px;margin:10px 0 36px}
+h2{font-size:18px;font-weight:600;margin:36px 0 8px}
+p,li{color:var(--ink)}
+ul{padding-left:22px}
+li{margin-bottom:8px}
+a{color:var(--blue)}
+.note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:14px}
+@media (max-width:520px){nav a{margin-left:12px}}
 </style>
 </head>
 <body>
-
-<nav><a href="./">Home</a> · <a href="./terms.html">Terms of Service</a></nav>
-
-<h1>Privacy Policy for DawaCheck</h1>
-<p class="updated">Last updated: September 29, 2026</p>
-
-<p>DawaCheck ("the app") helps you compare medicine prices in India and find cheaper, government-verified alternatives. This page explains what data the app handles and why.</p>
-
+<header><div class="wrap bar">
+<a class="logo" href="./"><img src="assets/icon.png" alt=""><span>Dawa<b>Check</b></span></a>
+<nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav>
+</div></header>
+<main><div class="wrap">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: October 2, 2026</p>
+<p>DawaCheck ("the app") helps you compare medicine prices in India and find cheaper, government-verified alternatives. This page explains what data the app and this website handle, why, where it is stored and for how long.</p>
 <h2>Signing in is required</h2>
-<p>You sign in with your Google account before the app can be used — this keeps the daily free allowance of checks fair for everyone and prevents automated abuse. Google confirms your identity to our server, which verifies it independently and never trusts the app's own claim. Accounts created earlier with a verified phone number continue to work.</p>
-
+<p>You sign in with your Google account before the app can be used. This keeps the daily free allowance of checks fair for everyone and prevents automated abuse. Google confirms your identity to our server, which verifies it independently. Accounts created earlier with a verified phone number continue to work.</p>
 <h2>What we collect</h2>
 <ul>
-  <li><strong>Google account info:</strong> your Google account ID, name, email address, and profile photo, received from Google when you sign in.</li>
+  <li><strong>Google account info:</strong> your Google account ID, name, email address and profile photo, received from Google when you sign in.</li>
   <li><strong>Check count:</strong> how many checks you have used, to enforce the free daily allowance and any paid check balance.</li>
   <li><strong>Phone number (earlier accounts only):</strong> accounts created before Google sign-in keep the phone number they were verified with.</li>
   <li><strong>Search queries:</strong> when you search for a medicine by name, that text is sent to our server to look up prices.</li>
-  <li><strong>Photos (camera/gallery scan):</strong> when you use the scan feature, the photo is sent securely (HTTPS) to our server, which forwards it to Google's Gemini AI to identify the medicine. The photo itself is not stored by DawaCheck after the request completes.</li>
-  <li><strong>Purchases (optional):</strong> if you buy the optional subscription or a check recharge, the purchase itself is handled entirely by Google Play. We receive only what is needed to confirm it — such as the order ID, product, and subscription status — never your payment details.</li>
+  <li><strong>Photos (camera/gallery scan):</strong> when you use the scan feature, the photo is sent securely (HTTPS) to our server, which forwards it to Google's Gemini AI to identify the medicine. DawaCheck does not store the photo after the request completes.</li>
+  <li><strong>My List:</strong> medicines you save, with an optional batch number you type in, and a price snapshot of each item when it was added (used for your savings history).</li>
+  <li><strong>Purchases (optional):</strong> if you buy the optional subscription or a check recharge, the purchase is handled entirely by Google Play. We receive only what is needed to confirm it, such as the order ID, product and subscription status, never your payment details.</li>
 </ul>
-
 <h2>Anonymous location and demographic data</h2>
-<p>Before you sign in, the app asks for your age range, gender, and approximate location (detected using your device's location permission and resolved to a city/district/state/PIN code — not your precise coordinates). This information is stored in a record that contains no name, email address, phone number, or account identifier of any kind, and cannot be linked back to you or your account.</p>
-<p>Each time you search for or scan a medicine, the medicine's name and salt composition is added to this same anonymous record, alongside the age range, gender, and location bucket above and the season in which the search happened. We use this anonymized information to understand regional and seasonal medicine-access and pricing patterns — for research, product improvement, aggregate reporting, and other lawful purposes permitted under applicable Indian law. Because these records are never linked to your identity, they are retained even after you delete your account.</p>
-
-<h2>My List</h2>
-<p>Medicines you add to My List are saved to your account on our server (so the list follows you if you switch phones), and cached on your device. It is not sold or shared with anyone.</p>
-
-<h2>Deleting your data</h2>
-<p>From Settings → Account → "Delete my account" in the app, you can permanently remove your account — your Google account info or phone number, your check count, subscription and recharge records, and your saved My List — from our server at any time. This also clears the local copy on your device. This action cannot be undone. The anonymous location/demographic and search-pattern records described above are not linked to your account in any way and are therefore not affected by this deletion. To delete your account without the app, see <a href="./delete-account.html">Delete your account</a>.</p>
-
-<h2>Third-party services we use</h2>
+<p>Before you sign in, the app asks for your age range, gender, and approximate location (detected using your device&#x27;s location permission and resolved to a city/district/state/PIN code — not your precise coordinates). This information is stored in a record that contains no name, email address, phone number, or account identifier of any kind, and is not joined to your account.</p>
+<p>Each time you search for or scan a medicine, the medicine&#x27;s name and salt composition is added to this same anonymous record, alongside the age range, gender, and location bucket above and the season in which the search happened. We use this information to understand regional and seasonal medicine-access and pricing patterns — for research, product improvement, aggregate reporting, and other lawful purposes permitted under applicable Indian law. Because these records are not joined to your account, they are retained even after you delete your account.</p>
+<p>Because a combination such as PIN code, age range and gender can describe a small group of people, we only ever use these records in aggregate and never try to identify anyone from them.</p>
+<h2>How long we keep data</h2>
 <ul>
-  <li><strong>Google Sign-In</strong> — used to sign you in and verify your identity. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
-  <li><strong>Firebase (Google)</strong> — used to verify the phone number of accounts that sign in with a phone number. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
-  <li><strong>Google (Gemini AI)</strong> — processes photos you choose to scan and text you search for, in order to identify medicines and look up current prices (which may involve a Google Search). See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
-  <li><strong>Google Play Billing</strong> — handles the optional subscription and recharge purchases. See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
-  <li><strong>Google Maps</strong> — if you tap "Find a Kendra near me," the app opens Google Maps in your browser or Maps app. DawaCheck does not share any of your data with Google to do this beyond following a link.</li>
+  <li><strong>Your account and My List:</strong> until you delete your account.</li>
+  <li><strong>After deletion:</strong> to stop the free allowance being reset by deleting and re-creating an account, we keep only a one-way coded identifier together with today's check count, this month's subscription usage and whether you answered the age/location questions, for 35 days; it is then erased automatically.</li>
+  <li><strong>Anonymous location/demographic and search records:</strong> kept indefinitely for the purposes above, as they are not joined to any account.</li>
+  <li><strong>Technical logs:</strong> our hosting and network providers keep short-term request logs (such as IP address and time) for security and reliability, under their own retention rules.</li>
 </ul>
-
+<h2>Deleting your data</h2>
+<p>From Settings &rarr; Account &rarr; "Delete my account" in the app, you can permanently remove your account (your Google account info or phone number, your check count, subscription and recharge records, and your saved My List) from our server at any time. This also clears the local copy on your device and cannot be undone. The 35-day record described above and the anonymous records are handled as described in "How long we keep data". To delete your account without the app, see <a href="delete-account.html">Delete your account</a>.</p>
+<h2>Service providers and where data is stored</h2>
+<ul>
+  <li><strong>Render</strong> runs our application servers.</li>
+  <li><strong>Supabase</strong> hosts our database, in its Mumbai (India) region.</li>
+  <li><strong>Cloudflare</strong> sits in front of our servers for security and reliability.</li>
+  <li><strong>Google</strong>: Google Sign-In (identity), Gemini AI (processes photos you scan and text you search, which may involve a Google Search), Google Play Billing (purchases), Firebase (phone verification for accounts that use a phone number) and Google Fonts (this website). See <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</li>
+  <li><strong>Hostinger</strong> handles email sent to support@dawacheck.in.</li>
+  <li>Google Maps opens only if you tap "Find a Kendra near me"; DawaCheck shares nothing with it beyond following a link.</li>
+</ul>
+<p>Some of these providers may process data outside India, under their own security and privacy commitments.</p>
+<h2>This website</h2>
+<p>dawacheck.in uses no cookies, analytics or advertising. It loads fonts from Google Fonts, so your browser connects to Google when you open a page.</p>
 <h2>Current practices</h2>
-<p>As of the date of this policy: DawaCheck does not use advertising or analytics SDKs, does not sell your personal data to third parties, and does not track you across other apps or websites. If any of this changes, we'll update this policy first (see "Changes to this policy" below) and notify users before the change takes effect.</p>
-
-<h2>Children's privacy</h2>
+<p>As of the date of this policy, DawaCheck does not use advertising or analytics SDKs, does not sell your personal data to third parties, and does not track you across other apps or websites.</p>
+<h2>Children&#x27;s privacy</h2>
 <p>DawaCheck is not directed at children and does not knowingly collect data from children.</p>
-
+<h2>Your rights and grievance officer</h2>
+<p>For data linked to your account (Google account details or phone number, My List, check count, subscription and recharge status), you can access or delete it at any time from Settings → Account. To ask a question about your data or exercise any other right available to you under applicable Indian data-protection law, contact us at <a href="mailto:support@dawacheck.in">support@dawacheck.in</a>.</p>
+<p>Grievance Officer: Sourabh Saini, DawaCheck, Shahabad Markanda, Kurukshetra, Haryana 136135, India. Email: <a href="mailto:support@dawacheck.in">support@dawacheck.in</a>. We aim to acknowledge complaints within 24 hours and resolve them within 15 days.</p>
 <h2>Changes to this policy</h2>
-<p>If this policy changes, the "Last updated" date at the top will be revised.</p>
-
+<p>If this policy changes, we update this page and the "Last updated" date. For important changes we will also tell you in the app before they take effect.</p>
 <h2>Contact</h2>
-<p>Questions about this policy? Email <strong>support@dawacheck.in</strong>.</p>
+<p>Questions about this policy? Email <a href="mailto:support@dawacheck.in">support@dawacheck.in</a>.</p>
 
+</div></main>
+<footer><div class="wrap">DawaCheck is a medicine price information tool. It is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. &middot; <a href="mailto:support@dawacheck.in">support@dawacheck.in</a></div></footer>
 </body>
 </html>
